@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REST API</title>
+</head>
+
+<body>
+    <!-- LOGIN -->
+    <form action="users_api.php" method="POST">
+        <input type="text" name="request" value="in" readonly>
+        <input type="email" name="email" value="joao@hostmail.com" required>
+        <input type="password" name="pass" value="123456" required>
+        <input type="submit" value="Login">
+    </form>
+    <br><br>
+
+    <!-- ADD USER -->
+    <form action="users_api.php" method="POST">
+        <input type="text" name="request" value="save" readonly>
+        <input type="email" name="email" value="joao@hostmail.com" required>
+        <input type="password" name="pass" value="123456" required>
+        <input type="submit" value="Adicionar">
+    </form>
+    <br><br>
+
+    <!-- UPDATE USER -->
+    <form action="users_api.php" method="POST">
+        <input type="text" name="req" value="save" readonly>
+        <input type="number" name="id" value="2" readonly>
+        <input type="email" name="email" value="roberto@hostmail.uk" required>
+        <input type="password" name="pass" value="123456123456" required>
+        <input type="submit" value="Atualizar">
+    </form>
+    <br><br>
+
+    <!-- GET USER -->
+    <form action="users_api.php" method="POST">
+        <input type="text" name="req" value="get" readonly>
+        <input type="number" name="id" value="1" required>
+        <input type="submit" value="Retornar">
+    </form>
+    <br><br>
+
+    <!-- DELETE USER -->
+    <form action="users_api.php" method="POST">
+        <input type="text" name="request" value="del" readonly>
+        <input type="number" name="id" value="2" required>
+        <input type="submit" value="Excluir">
+    </form>
+    <br><br>
+
+    <!-- GET USER -->
+    <form action="users_api.php" method="POST">
+        <input type="text" name="request" value="out" readonly>
+        <input type="submit" value="Sair">
+    </form>
+
+</body>
+
+</html>
