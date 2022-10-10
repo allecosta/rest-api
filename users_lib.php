@@ -91,12 +91,7 @@ class Users
     }
 }
 
-
-define('DB_HOST', 'localhost');
-define('DB_NAME', 'db_rest_api');
-define('DB_CHARSET', 'UTF8');
-define('DB_USER', 'root');
-define('DB_PASSWORD', 'matrix0101');
+require 'config.php';
 
 session_start();
 
